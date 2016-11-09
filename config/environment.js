@@ -6,14 +6,20 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: 'AIzaSyDjTlxVxurHz3xZPgFz_NBgxP_HZKta1oo',
+      authDomain: 'idiii-e7009.firebaseapp.com',
+      databaseURL: 'https://idiii-e7009.firebaseio.com',
+      storageBucket: 'idiii-e7009.appspot.com'
+    },
+     torii: {
+      sessionServiceName: 'session'
+    },
+    
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
       }
     },
 
